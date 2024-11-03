@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CircuitLab - Learn Electronics</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .progress-bar {
+            background: linear-gradient(90deg, #3B82F6 var(--progress), #E5E7EB var(--progress));
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation (keeping consistent with main site) -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-blue-600">CircuitLab</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Game</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-semibold">Learn</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Resources</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Learning Path Header -->
+    <div class="bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 py-8">
+            <h1 class="text-3xl font-bold text-gray-900 mb-4">Learning Path</h1>
+            <p class="text-lg text-gray-600 mb-6">Master circuit building from basics to advanced concepts</p>
+            <div class="w-full h-4 bg-gray-200 rounded-full overflow-hidden">
+                <div class="h-full rounded-full progress-bar" style="--progress: 35%"></div>
+            </div>
+            <div class="flex justify-between mt-2">
+                <span class="text-sm text-gray-600">Progress: 35%</span>
+                <span class="text-sm text-gray-600">7/20 Lessons Completed</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Learning Modules -->
+            <div class="lg:col-span-2">
+                <!-- Module 1 -->
+                <div class="bg-white rounded-lg shadow-sm mb-6 overflow-hidden">
+                    <div class="p-6">
+                        <h2 class="text-xl font-semibold mb-4">1. Fundamentals of Electricity</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                                <div class="flex-shrink-0">
+                                    <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium">Basic Concepts of Voltage and Current</h3>
+                                    <p class="text-gray-600">Completed</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-4 bg-blue-50 rounded-lg">
+                                <div class="flex-shrink-0">
+                                    <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium">Understanding Resistance</h3>
+                                    <p class="text-gray-600">In Progress</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                                <div class="flex-shrink-0">
+                                    <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                    </svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium">Ohm's Law</h3>
+                                    <p class="text-gray-600">Locked</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="bg-white rounded-lg shadow-sm mb-6 overflow-hidden">
+                    <div class="p-6">
+                        <h2 class="text-xl font-semibold mb-4">2. Basic Circuit Components</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                                <div class="flex-shrink-0">
+                                    <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                    </svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium">Resistors and LEDs</h3>
+                                    <p class="text-gray-600">Locked</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                                <div class="flex-shrink-0">
+                                    <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                    </svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium">Capacitors and Their Uses</h3>
+                                    <p class="text-gray-600">Locked</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:col-span-1">
+                <!-- Current Lesson -->
+                <div class="bg-white rounded-lg shadow-sm mb-6 p-6">
+                    <h3 class="text-lg font-semibold mb-4">Current Lesson</h3>
+                    <div class="aspect-w-16 aspect-h-9 mb-4">
+                        <img src="/api/placeholder/400/225" alt="Lesson thumbnail" class="rounded-lg">
+                    </div>
+                    <h4 class="text-xl font-medium mb-2">Understanding Resistance</h4>
+                    <p class="text-gray-600 mb-4">Learn how resistance affects current flow in circuits and how to calculate it.</p>
+                    <button class="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Continue Learning</button>
+                </div>
+
+                <!-- Resources -->
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <h3 class="text-lg font-semibold mb-4">Helpful Resources</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            <a href="#" class="text-blue-600 hover:underline">Circuit Components Guide</a>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            <a href="#" class="text-blue-600 hover:underline">Practice Problems</a>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            <a href="#" class="text-blue-600 hover:underline">Video Tutorials</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-12">
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Product</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900">Features</a></li>
+                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900">Pricing</a></li>
+                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900">Tutorial</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Resources</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900">Documentation</a></li>
+                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900">Guides</a></li>
+                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900">Community</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Company</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900">About</a></li>
+                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900">Blog</a></li>
+                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Legal</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900">Privacy</a></li>
+                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-200 pt-8">
+                <p class="text-base text-gray-400 text-center">&copy; 2024 CircuitLab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
